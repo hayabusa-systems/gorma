@@ -18,7 +18,8 @@
   revision = "ee938bf735983d53694d79138ad9820efff94c92"
 
 [[projects]]
-  digest = "1:67b94d4b1eac5834028b12950c539b5f9476f7d0fcdb78fd4655708518e12ab5"
+  branch = "master"
+  digest = "1:1e0d58a35cdd27b3f3cbc4b8dfa7f14e6f00411f6ac96fb53fe97a952eb460a6"
   name = "github.com/goadesign/goa"
   packages = [
     "design",
@@ -29,8 +30,7 @@
     "version",
   ]
   pruneopts = "UT"
-  revision = "e01bb31dd9403fa9d40747e1f93345bc96ea675e"
-  version = "v1.4.0"
+  revision = "a90c65e2783d3ccf4752d11b1e5bb8bace16d598"
 
 [[projects]]
   branch = "master"
@@ -138,12 +138,11 @@
   version = "v1.4.2"
 
 [[projects]]
-  digest = "1:274f67cb6fed9588ea2521ecdac05a6d62a8c51c074c1fccc6a49a40ba80e925"
+  digest = "1:ff6b0586c0621a76832cf783eee58cbb9d9795d2ce8acbc199a4131db11c42a9"
   name = "github.com/satori/go.uuid"
   packages = ["."]
   pruneopts = "UT"
-  revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
-  version = "v1.2.0"
+  revision = "master"
 
 [[projects]]
   branch = "master"
@@ -246,6 +245,7 @@
     "github.com/kr/pretty",
     "github.com/onsi/ginkgo",
     "github.com/onsi/gomega",
+    "github.com/satori/go.uuid",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

@@ -2,6 +2,7 @@ package gorma_test
 
 import (
 	"fmt"
+	"reflect"
 	"testing"
 
 	"github.com/goadesign/goa/design"
@@ -42,7 +43,7 @@ func TestModelDSL(t *testing.T) {
 	sg.DefinitionDSL = f
 	c := sg.DSL()
 	if c == nil {
-		t.Errorf("Expected %v, got nil", f)
+		t.Errorf("Expected %s, got nil", reflect.TypeOf(f).Kind())
 	}
 
 }

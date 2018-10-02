@@ -31,7 +31,7 @@
 
 [[constraint]]
   name = "github.com/goadesign/goa"
-  version = "1.4.0"
+  branch = "master"
 
 [[constraint]]
   branch = "master"
@@ -52,6 +52,10 @@
 [[constraint]]
   name = "github.com/onsi/gomega"
   version = "1.4.2"
+
+[[constraint]]
+    name = "github.com/satori/go.uuid"
+    revision = "master"
 
 [prune]
   go-tests = true
