@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/goadesign/gorma"
-	"github.com/goadesign/gorma/dsl"
+	"github.com/hayabusa-systems/gorma"
+	"github.com/hayabusa-systems/gorma/dsl"
 )
 
 func TestFieldContext(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/goadesign/gorma"
+	"github.com/hayabusa-systems/gorma"
 )
 
 func TestStoreContext(t *testing.T) {

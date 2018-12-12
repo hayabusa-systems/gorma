@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/goadesign/gorma"
+	"github.com/hayabusa-systems/gorma"
 )
 
 func TestStorageGroupContext(t *testing.T) {

@@ -245,7 +245,6 @@
     "github.com/kr/pretty",
     "github.com/onsi/ginkgo",
     "github.com/onsi/gomega",
-    "github.com/satori/go.uuid",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
