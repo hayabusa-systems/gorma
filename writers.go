@@ -469,7 +469,7 @@ func (m *{{$ut.ModelName}}DB) TableName() string {
 func {{$ut.ModelName}}FilterBy{{$bt.ModelName}}({{goify (printf "%s%s" $bt.ModelName "ID") false}} {{ goDatatypeByModel $ut $bt.ModelName }}, originaldb *gorm.DB) func(db *gorm.DB) *gorm.DB {
 
 {{ range $l, $pk := $ut.PrimaryKeys }}
-	{{ if eq $pk.Datatype "uuid" }}
+{{ if eq $pk.Datatype "uuid" }}
 	if {{goify (printf "%s%s" $bt.ModelName "ID") false}}.String() != "" {
 {{ else }}
 	if {{goify (printf "%s%s" $bt.ModelName "ID") false}} > 0 {
