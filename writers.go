@@ -535,6 +535,9 @@ func (m *{{$ut.ModelName}}DB) Add(ctx context.Context{{ if $ut.DynamicTableName 
 func (m *{{$ut.ModelName}}DB) Update(ctx context.Context{{ if $ut.DynamicTableName }}, tableName string{{ end }}, model *{{$ut.ModelName}}) error {
 	defer goa.MeasureSince([]string{"goa","db","{{goify $ut.ModelName false}}", "update"}, time.Now())
 
+{{ range $idx, $bt := $ut.BelongsTo}}
+	model.{{$bt.ModelName}} = {{$bt.ModelName}}{}
+{{ end }}
 	obj, err := m.Get(ctx{{ if $ut.DynamicTableName }}, tableName{{ end }}, {{$ut.PKUpdateFields "model"}})
 	if err != nil {
 		goa.LogError(ctx, "error updating {{$ut.ModelName}}", "error", err.Error())
